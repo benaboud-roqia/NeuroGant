@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/aubergine"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Démonstration Paiement BaridiMob"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Statut actuel: Utilisateur Gratuit"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_card_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simuler un paiement BaridiMob :"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/simulate_success_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simuler Paiement Réussi"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_green"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/simulate_failure_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simuler Paiement Échoué"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_red"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/simulate_cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simuler Annulation"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_background"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note: Cette page est uniquement pour les tests. En production, elle sera remplacée par l'interface de paiement réelle de BaridiMob."
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:padding="16dp" />
+
+</LinearLayout> 

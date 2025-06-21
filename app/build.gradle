@@ -1,0 +1,166 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+
+android {
+    namespace 'com.dianerverotect'
+    compileSdk 35
+    
+    // Enhanced configurations to resolve duplicate class issues
+    configurations.all {
+        // Exclude problematic transitive dependencies
+        exclude group: 'com.google.protobuf', module: 'protobuf-javalite'
+        exclude group: 'io.grpc', module: 'grpc-protobuf-lite'
+        
+        resolutionStrategy {
+            // Force specific versions of common libraries to avoid conflicts
+            force 'com.google.guava:guava:30.1-android'
+            force 'com.google.code.findbugs:jsr305:3.0.2'
+            force 'org.checkerframework:checker-compat-qual:2.5.5'
+            force 'com.google.errorprone:error_prone_annotations:2.9.0'
+            force 'com.google.j2objc:j2objc-annotations:1.3'
+            force 'io.grpc:grpc-core:1.46.0'
+            force 'io.grpc:grpc-api:1.46.0'
+            force 'io.grpc:grpc-context:1.46.0'
+            force 'com.google.protobuf:protobuf-java:3.19.4'
+            force 'com.google.protobuf:protobuf-java-util:3.19.4'
+            force 'com.google.android.gms:play-services-basement:18.1.0'
+            force 'com.google.android.gms:play-services-tasks:18.0.2'
+            
+            // Prefer modules that are part of this build
+            preferProjectModules()
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.dianerverotect"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("dianerve-key.keystore")
+            storePassword "dianerve123"
+            keyAlias "dianerve-key"
+            keyPassword "dianerve123"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    
+    // Enhanced packaging options to handle duplicate files
+    packaging {
+        resources {
+            // Exclude common problematic files
+            excludes += ['META-INF/MANIFEST.MF', 'META-INF/LICENSE', 'META-INF/NOTICE', 'META-INF/LICENSE.txt', 'META-INF/NOTICE.txt']
+            excludes += ['META-INF/versions/9/OSGI-INF/MANIFEST.MF', 'META-INF/INDEX.LIST']
+            excludes += ['META-INF/io.netty.versions.properties', 'META-INF/*.kotlin_module']
+            excludes += ['META-INF/proguard/*']
+            excludes += ['META-INF/DEPENDENCIES']
+            excludes += ['META-INF/ASL2.0']
+            excludes += ['META-INF/license.txt', 'META-INF/notice.txt']
+            
+            // Exclude service files that might cause conflicts
+            excludes += ['META-INF/services/io.grpc.LoadBalancerProvider']
+            excludes += ['META-INF/services/io.grpc.NameResolverProvider']
+            excludes += ['META-INF/services/com.fasterxml.*']
+            excludes += ['META-INF/services/com.google.*']
+            excludes += ['META-INF/services/javax.*']
+            excludes += ['META-INF/services/org.*']
+            excludes += ['META-INF/services/io.*']
+            excludes += ['META-INF/services/java.*']
+            
+            // Use pickFirst for remaining service files and other resources
+            pickFirsts += ['META-INF/services/*']
+            pickFirsts += ['META-INF/native/**']
+            pickFirsts += ['META-INF/native-image/**']
+            pickFirsts += ['META-INF/eclipse.inf']
+            pickFirsts += ['META-INF/LGPL*']
+            pickFirsts += ['META-INF/AL*']
+            pickFirsts += ['META-INF/LEGAL*']
+        }
+        
+        // Don't strip these architectures
+        jniLibs {
+            keepDebugSymbols += ['**/mips/*.so', '**/mips64/*.so']
+        }
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+
+    // Firebase dependencies
+    implementation platform(libs.firebase.bom)
+    implementation libs.firebase.auth
+    implementation libs.firebase.database
+    implementation libs.firebase.storage
+    
+    // TensorFlow Lite dependencies for AI models - consolidated to avoid conflicts
+    implementation 'org.tensorflow:tensorflow-lite:2.9.0'
+
+    // MPAndroidChart
+    implementation libs.mpandroidchart
+    implementation libs.circleimageview
+    
+    // Glide for image loading
+    implementation libs.glide
+    implementation libs.identity.jvm
+    annotationProcessor libs.glide.compiler
+    
+    // TensorFlow Lite additional dependencies - using compatible versions
+    implementation 'org.tensorflow:tensorflow-lite-support:0.3.1'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.3.1'
+    
+    // ML Kit for language identification
+    implementation 'com.google.mlkit:language-id:17.0.4'
+    
+    // We've removed all Dialogflow client libraries and are using direct HTTP requests instead
+    // No additional dependencies needed for our simplified implementation
+    
+    // PDF Generation
+    implementation 'com.itextpdf:itextpdf:5.5.13.3'
+    implementation 'androidx.core:core:1.12.0'
+    
+    // Excel export
+    implementation 'org.apache.poi:poi:5.2.3'
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+
+    // Google Play Billing
+    def billing_version = "6.2.1"
+    implementation "com.android.billingclient:billing:$billing_version"
+
+    // HTTP client for BaridiMob payments
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    
+    testImplementation libs.junit
+    testImplementation 'org.mockito:mockito-core:5.3.1'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.3.1'
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation 'com.google.guava:guava:31.1-android'
+}
+
+apply plugin: 'com.google.gms.google-services'

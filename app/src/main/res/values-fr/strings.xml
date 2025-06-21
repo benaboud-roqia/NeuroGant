@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nerve Protect</string>
+    
+    <!-- Disease Selection strings -->
+    <string name="select_disease">Sélectionner une maladie</string>
+    <string name="diabetic_neuropathy">Neuropathie diabétique</string>
+    <string name="als">Sclérose latérale amyotrophique</string>
+    <string name="selected">sélectionnée</string>
+    <string name="disease_selection">Sélection de maladie</string>
+    <string name="change">Changer</string>
+    <string name="change_disease_title">Changer de maladie</string>
+    <string name="change_disease_message">Sélectionnez la maladie que vous souhaitez surveiller:</string>
+    
+    <!-- Settings strings -->
+    <string name="settings_title">Paramètres</string>
+    <string name="glove_config">Configuration du gant</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Langue</string>
+    <string name="language_english">Anglais</string>
+    <string name="language_french">Français</string>
+    <string name="language_spanish">Espagnol</string>
+    <string name="measurement_units">Unités de mesure</string>
+    <string name="data_syncing">Synchronisation des données</string>
+    <string name="about_us">À propos de nous</string>
+    <string name="log_out">Déconnexion</string>
+    <string name="unit">Unité</string>
+    
+    <!-- Home Fragment strings -->
+    <string name="hello">bonjour!</string>
+    <string name="glove_state">État du gant</string>
+    <string name="device_connected">appareil connecté</string>
+    <string name="glucose_check_reminder">Assurez-vous de vérifier votre taux de glucose deux heures après avoir mangé</string>
+    <string name="glucose_unit">mg/dL</string>
+    <string name="get_started">commencer</string>
+    <string name="results">RÉSULTATS</string>
+    <string name="emg_monitor">Moniteur EMG</string>
+    <string name="temperature_sensation_question">Pouvez-vous clairement sentir si ce que je touche sur votre peau est chaud ou froid?</string>
+    <string name="pressure_sensation_question">Pouvez-vous clairement sentir si j\'appuie légèrement ou fermement sur vos doigts, ou sentez-vous à peine quelque chose?</string>
+    <string name="yes">oui</string>
+    <string name="no">non</string>
+    <string name="analyze_results">analyser les résultats</string>
+    
+    <!-- About Dialog strings -->
+    <string name="about_us_title">À propos de nous</string>
+    <string name="button_close">Fermer</string>
+    
+    <!-- Logout strings -->
+    <string name="logout_confirmation_title">Confirmer la Déconnexion</string>
+    <string name="logout_confirmation_message">Êtes-vous sûr de vouloir vous déconnecter?</string>
+    <string name="logout_success">Déconnexion réussie</string>
+</resources>

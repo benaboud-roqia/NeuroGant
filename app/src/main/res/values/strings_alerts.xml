@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Glucose Reminder Notification -->
+    <string name="glucose_reminder_title">Glucose Check Reminder</string>
+    <string name="glucose_reminder_message">Time to check your glucose level. Please enter your current reading.</string>
+    
+    <!-- Vital Data Update Notification -->
+    <string name="vital_data_update_title">Vital Data Update</string>
+    <string name="vital_data_update_message">Please update your vital health data to get a more accurate risk assessment.</string>
+    
+    <!-- Glove Connection Notifications -->
+    <string name="glove_connected_title">Glove Connected</string>
+    <string name="glove_connected_message">Your DiaNerve glove is now connected and ready for measurements.</string>
+    <string name="glove_disconnected_title">Glove Disconnected</string>
+    <string name="glove_disconnected_message">Your DiaNerve glove has been disconnected. Please reconnect to continue monitoring.</string>
+    
+    <!-- Technical Notifications -->
+    <string name="glove_battery_low_title">Low Battery Alert</string>
+    <string name="glove_battery_low_message">Your DiaNerve glove battery is running low. Please charge it soon.</string>
+    <string name="app_update_title">Update Available</string>
+    <string name="app_update_message">A new version of DiaNerveProtect is available. Update for the latest features and improvements.</string>
+    <string name="sync_issue_title">Sync Issue Detected</string>
+    <string name="sync_issue_message">There are connectivity issues with your device. Check your Bluetooth/Wi-Fi connection.</string>
+    
+    <!-- Reminder Settings Screen -->
+    <string name="alerts_settings_title">Alert Settings</string>
+    <string name="glucose_reminder_setting_title">Glucose Check Reminder</string>
+    <string name="glucose_reminder_setting_desc">Set a daily reminder to check your glucose level</string>
+    <string name="glucose_reminder_time_title">Reminder Time</string>
+    <string name="glucose_reminder_time_desc">Set the time for your daily glucose check reminder</string>
+    <string name="vital_data_reminder_title">Vital Data Update Alerts</string>
+    <string name="vital_data_reminder_desc">Receive alerts when vital data needs to be updated</string>
+    <string name="glove_connection_alerts_title">Glove Connection Alerts</string>
+    <string name="glove_connection_alerts_desc">Get notified about glove connection status</string>
+    <string name="technical_alerts_title">Technical Notifications</string>
+    <string name="technical_alerts_desc">Get alerts for battery, updates and connectivity issues</string>
+    <string name="set_time">Set Time</string>
+    <string name="cancel">Cancel</string>
+</resources> 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DiaNerve Protect</string>
+    
+    <!-- Disease Selection strings -->
+    <string name="select_disease">Seleccionar enfermedad</string>
+    <string name="diabetic_neuropathy">Neuropatía diabética</string>
+    <string name="als">Esclerosis lateral amiotrófica</string>
+    <string name="selected">seleccionado</string>
+    <string name="disease_selection">Selección de enfermedad</string>
+    <string name="change">Cambiar</string>
+    <string name="change_disease_title">Cambiar enfermedad</string>
+    <string name="change_disease_message">Seleccione la enfermedad que desea monitorear:</string>
+    
+    <!-- Settings strings -->
+    <string name="settings_title">Configuración</string>
+    <string name="glove_config">Configuración del guante</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="language">Idioma</string>
+    <string name="language_english">Inglés</string>
+    <string name="language_french">Francés</string>
+    <string name="language_spanish">Español</string>
+    <string name="measurement_units">Unidades de medida</string>
+    <string name="data_syncing">Sincronización de datos</string>
+    <string name="about_us">Acerca de nosotros</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="unit">Unidad</string>
+    
+    <!-- Home Fragment strings -->
+    <string name="hello">¡hola!</string>
+    <string name="glove_state">Estado del guante</string>
+    <string name="device_connected">dispositivo conectado</string>
+    <string name="glucose_check_reminder">Asegúrese de verificar su nivel de glucosa dos horas después de comer</string>
+    <string name="glucose_unit">mg/dL</string>
+    <string name="get_started">comenzar</string>
+    <string name="results">RESULTADOS</string>
+    <string name="emg_monitor">Monitor EMG</string>
+    <string name="temperature_sensation_question">¿Puede sentir claramente si lo que estoy tocando en su piel está caliente o frío?</string>
+    <string name="pressure_sensation_question">¿Puede sentir claramente si presiono ligeramente o firmemente sus dedos, o apenas siente algo?</string>
+    <string name="yes">sí</string>
+    <string name="no">no</string>
+    <string name="analyze_results">analizar resultados</string>
+    
+    <!-- History Fragment strings -->
+    <string name="history_fragment">Historial</string>
+    
+    <!-- Navigation Drawer strings -->
+    <string name="username_placeholder">Nombre de usuario</string>
+    <string name="email_placeholder">usuario@ejemplo.com</string>
+    
+    <!-- Countdown Dialog strings -->
+    <string name="preparing_test">Preparando prueba...</string>
+    <string name="countdown_initial">20</string>
+    <string name="hand_movement_instruction">Por favor, mueva su mano como en la animación...</string>
+    
+    <!-- Analysis Results Dialog strings -->
+    <string name="analysis_results">Resultados del análisis</string>
+    <string name="neuropathy_risk_assessment">Evaluación de riesgo de neuropatía</string>
+    <string name="risk_level_low">Nivel de riesgo: Bajo</string>
+    <string name="risk_score">Puntuación de riesgo: 0.25</string>
+    <string name="ml_model_analysis">✓ Análisis por modelo ML</string>
+    <string name="low_risk_description">Según los resultados de su prueba, su riesgo de neuropatía diabética es bajo.</string>
+    <string name="recommendations">Recomendaciones</string>
+    <string name="test_data_summary">Resumen de datos de prueba</string>
+    <string name="glucose_value">Valor de glucosa: %1$s mg/dL</string>
+    <string name="temperature_sensation">Sensación de temperatura: %1$s</string>
+    <string name="pressure_sensation">Sensación de presión: %1$s</string>
+    <string name="emg_analysis">Análisis EMG: %1$s</string>
+    <string name="close">Cerrar</string>
+    
+    <!-- Registration Activity strings -->
+    <string name="create_account">Crear cuenta</string>
+    <string name="registration_instruction">Por favor, complete la información a continuación</string>
+    <string name="terms_agreement">Acepto los Términos y Condiciones y la Política de Privacidad</string>
+    
+    <!-- Recommendation Item strings -->
+    <string name="recommendation_title">Título de la recomendación</string>
+    <string name="recommendation_description">Descripción de la recomendación con información detallada sobre lo que el paciente debe hacer.</string>
+    
+    <!-- About Dialog strings -->
+    <string name="about_us_title">Acerca de nosotros</string>
+    <string name="button_close">Cerrar</string>
+    
+    <!-- Logout strings -->
+    <string name="logout_confirmation_title">Confirmar Cierre de Sesión</string>
+    <string name="logout_confirmation_message">¿Estás seguro de que quieres cerrar sesión?</string>
+    <string name="logout_success">Sesión cerrada exitosamente</string>
+</resources>

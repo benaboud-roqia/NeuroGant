@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/rewards_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mes Récompenses"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Streak (jours consécutifs) -->
+        <TextView
+            android:id="@+id/streak_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Série de jours actifs : 0"
+            android:textSize="15sp"
+            android:textColor="#388E3C"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Citation inspirante du jour -->
+        <TextView
+            android:id="@+id/quote_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Citation du jour"
+            android:textSize="15sp"
+            android:textColor="#3F51B5"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Calendrier de suivi santé -->
+        <CalendarView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/health_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment vous sentez-vous aujourd'hui ?"
+            android:textSize="15sp"
+            android:layout_marginBottom="4dp"/>
+        <Button
+            android:id="@+id/btn_toggle_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Je me sens parfait !"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_health_status_bg"
+            android:textColor="@android:color/white"/>
+
+        <!-- Points -->
+        <TextView
+            android:id="@+id/points_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points : 0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Barre de progression -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Badges -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Badges débloqués"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/badges_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+            <!-- Les badges seront ajoutés dynamiquement -->
+        </LinearLayout>
+
+        <!-- Section bonus : conseil santé et contenu spécial -->
+        <TextView
+            android:id="@+id/bonus_health_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#388E3C"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/special_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#3F51B5"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"/>
+
+        <!-- Défis -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Défis à venir"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/challenges_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Les défis seront ajoutés dynamiquement -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_show_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voir mes bonus"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView> 

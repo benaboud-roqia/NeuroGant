@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/header_background">
+
+    <ImageView
+        android:id="@+id/nav_header_logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/logo_app"
+        android:contentDescription="Logo médical"/>
+
+    <TextView
+        android:id="@+id/nav_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nerve Assistant"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/nav_header_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre assistant médical IA"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout> 

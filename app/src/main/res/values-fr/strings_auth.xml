@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login Activity strings -->
+    <string name="app_description">Votre assistant intelligent dédié aux maladies neurologiques</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="forgot_password">Mot de passe oublié ?</string>
+    <string name="login">Connexion</string>
+    <string name="no_account">Vous n\'avez pas de compte ?</string>
+    <string name="register">S\'inscrire</string>
+    
+    <!-- Register Activity strings -->
+    <string name="back">Retour</string>
+    <string name="full_name_hint">Nom complet</string>
+    <string name="confirm_password_hint">Confirmer le mot de passe</string>
+    <string name="already_account">Vous avez déjà un compte ?</string>
+    
+    <!-- Profile Activity strings -->
+    <string name="profile_image_desc">Image de profil</string>
+    <string name="select_image">Sélectionner une image</string>
+    <string name="name_hint">Prénom</string>
+    <string name="family_name_hint">Nom de famille</string>
+    <string name="address_hint">Adresse</string>
+    <string name="gender">Genre</string>
+    <string name="male">Masculin</string>
+    <string name="female">Féminin</string>
+    <string name="age_hint">Âge</string>
+    <string name="diabetes_duration_hint">Durée du diabète</string>
+    <string name="diabetes_type_hint">Type de diabète</string>
+    <string name="weight_hint">Poids</string>
+    <string name="save_profile">Enregistrer le profil</string>
+</resources>

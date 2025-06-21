@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bluetooth strings -->
+    <string name="device_disconnected">dispositivo desconectado</string>
+    <string name="scan_devices">Buscar Dispositivos</string>
+    <string name="connecting">conectando...</string>
+    <string name="bluetooth_not_supported">Bluetooth no es compatible con este dispositivo</string>
+    <string name="bluetooth_not_enabled">Bluetooth no está activado</string>
+    <string name="enable_bluetooth">Activar Bluetooth</string>
+    <string name="scanning_for_devices">Buscando dispositivos...</string>
+    <string name="no_devices_found">No se encontraron dispositivos</string>
+    <string name="select_device">Seleccione un dispositivo para conectar</string>
+    <string name="connection_successful">Conectado al guante DiaNerve</string>
+    <string name="connection_failed">Conexión fallida</string>
+    <string name="device_found">Guante DiaNerve encontrado</string>
+    <string name="connecting_to_device">Conectando al guante DiaNerve...</string>
+    
+    <!-- Test notification strings -->
+    <string name="test_notifications">Probar Notificaciones</string>
+    <string name="glove_connected">Guante Conectado</string>
+    <string name="glove_disconnected">Guante Desconectado</string>
+    <string name="low_battery_percent">Batería Baja (%s)</string>
+    <string name="sync_issue">Problema de Sincronización</string>
+    <string name="app_update_available">Actualización Disponible</string>
+</resources>

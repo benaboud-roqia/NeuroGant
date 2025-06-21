@@ -1,0 +1,24 @@
+{
+  "name": "neuropathy_info",
+  "displayName": "Neuropathie Périphérique",
+  "priority": 500000,
+  "trainingPhrases": [
+    {"parts": [{"text": "Ressentez-vous des picotements ou des engourdissements dans les mains, les pieds ou les jambes ?"}]},
+    {"parts": [{"text": "Avez-vous des douleurs en brûlure, élancements ou chocs électriques dans les extrémités ?"}]},
+    {"parts": [{"text": "Avez-vous l'impression de marcher sur du coton ou de perdre la sensation du sol ?"}]},
+    {"parts": [{"text": "Avez-vous des zones de peau devenues moins sensibles au chaud, au froid ou au toucher ?"}]},
+    {"parts": [{"text": "Des vêtements ou des draps vous provoquent-ils de la douleur au contact de la peau ? (Allodynie)"}]},
+    {"parts": [{"text": "Avez-vous remarqué une faiblesse musculaire dans les jambes ou les bras ?"}]},
+    {"parts": [{"text": "Avez-vous des difficultés à vous déplacer ou à garder l'équilibre ?"}]},
+    {"parts": [{"text": "Avez-vous des crampes musculaires dans les jambes ou les pieds ?"}]},
+    {"parts": [{"text": "Avez-vous constaté une sécheresse inhabituelle de la peau au niveau des pieds ou des mains ?"}]},
+    {"parts": [{"text": "Avez-vous remarqué des changements de couleur ou de température de vos membres ?"}]},
+    {"parts": [{"text": "Avez-vous des troubles digestifs ou urinaires associés aux autres symptômes ?"}]},
+    {"parts": [{"text": "Êtes-vous atteint(e) de diabète ou d'une autre maladie chronique ?"}]},
+    {"parts": [{"text": "Depuis combien de temps ressentez-vous ces symptômes ?"}]},
+    {"parts": [{"text": "Ces symptômes sont-ils apparus de manière progressive ou soudaine ?"}]}
+  ],
+  "messages": [
+    {"text": {"text": ["Merci d'avoir répondu au questionnaire neuropathie. Un rapport sera généré avec des recommandations adaptées à vos réponses."]}}
+  ]
+}

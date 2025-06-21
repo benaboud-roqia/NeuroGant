@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Nerve Protect</string>
+    
+    <!-- Disease Selection strings -->
+    <string name="select_disease">Select Disease</string>
+    <string name="diabetic_neuropathy">Neuropathie diabétique</string>
+    <string name="als">Sclérose latérale amyotrophique</string>
+    <string name="selected">selected</string>
+    <string name="disease_selection">Disease Selection</string>
+    <string name="change">Change</string>
+    <string name="save">Save</string>
+    <string name="change_disease_title">Change Disease</string>
+    <string name="change_disease_message">Select the disease you want to monitor:</string>
+    <string name="test_notification_sent">Test notification sent</string>
+    
+    <!-- ALS Predictor strings -->
+    <string name="step_1_of_4">Step 1 of 4: Personal Information</string>
+    <string name="step_2_of_4">Step 2 of 4: Medical Questionnaire</string>
+    <string name="step_3_of_4">Step 3 of 4: EMG Signal</string>
+    <string name="step_4_of_4">Step 4 of 4: Result</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="save_result">Save Result</string>
+    
+    <!-- Personal Information strings -->
+    <string name="personal_information">Personal Information</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="symptom_duration">Duration of symptoms (months)</string>
+    <string name="family_history">Family history of ALS</string>
+    
+    <!-- Medical Questionnaire strings -->
+    <string name="medical_questionnaire">Medical Questionnaire</string>
+    <string name="never">Never</string>
+    <string name="sometimes">Sometimes</string>
+    <string name="often">Often</string>
+    <string name="always">Always</string>
+    <string name="no_severity">No</string>
+    <string name="mild">Mild</string>
+    <string name="moderate">Moderate</string>
+    <string name="severe">Severe</string>
+    
+    <!-- Motor Symptoms Questions -->
+    <string name="q1_muscle_weakness">Do you feel progressive muscle weakness in the arms or legs?</string>
+    <string name="q2_muscle_cramps">Have you noticed frequent muscle cramps?</string>
+    <string name="q3_fasciculations">Do you have fasciculations (small visible twitches under the skin)?</string>
+    <string name="q4_walking_difficulty">Do you have difficulty walking or climbing stairs?</string>
+    
+    <!-- Bulbar Functions Questions -->
+    <string name="q5_dysarthria">Do you have difficulty speaking (dysarthria)?</string>
+    <string name="q6_dysphagia">Do you have difficulty swallowing (dysphagia)?</string>
+
+    
+
+    
+    <!-- EMG Signal strings -->
+    <string name="emg_signal">EMG Signal</string>
+    <string name="emg_graph">EMG Graph</string>
+    <string name="load_from_file">Load from File</string>
+    <string name="connect_glove">Connect Glove</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    
+    <!-- Result strings -->
+    <string name="result">Result</string>
+    <string name="prediction_score">Prediction Score</string>
+    <string name="high_risk">🧠 High risk of ALS</string>
+    <string name="no_risk">✔️ No risk detected</string>
+    <string name="recommendation">Medical Recommendation</string>
+    
+    <!-- Settings strings -->
+    <string name="settings_title">Settings</string>
+    <string name="glove_config">Glove configuration</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_french">French</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="measurement_units">Measurement units</string>
+    <string name="data_syncing">Data Syncing</string>
+    <string name="about_us">About us</string>
+    <string name="log_out">Log out</string>
+    <string name="unit">Unit</string>
+    
+    <!-- Home Fragment strings -->
+    <string name="hello">hello!</string>
+    <string name="glove_state">Glove State</string>
+    <string name="device_connected">device connected</string>
+    <string name="glucose_check_reminder">Make sure to check your glucose level two hours after eating</string>
+    <string name="glucose_unit">mg/dL</string>
+    <string name="get_started">get started</string>
+    <string name="results">RESULTS</string>
+    <string name="emg_monitor">EMG Monitor</string>
+    <string name="temperature_sensation_question">Can you clearly feel whether what I am touching your skin with is hot or cold?</string>
+    <string name="pressure_sensation_question">Can you clearly feel if I am pressing lightly or firmly on your fingers, or do you barely feel anything?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="analyze_results">analyses results</string>
+    
+    <!-- History Fragment strings -->
+    <string name="history_fragment">History Fragment</string>
+    
+    <!-- Navigation Drawer strings -->
+    <string name="username_placeholder">Username</string>
+    <string name="email_placeholder">user@example.com</string>
+    
+    <!-- Countdown Dialog strings -->
+    <string name="preparing_test">Preparing Test...</string>
+    <string name="countdown_initial">20</string>
+    <string name="hand_movement_instruction">Please move your hand like the image animation...</string>
+    
+    <!-- Analysis Results Dialog strings -->
+    <string name="analysis_results">Analysis Results</string>
+    <string name="neuropathy_risk_assessment">Neuropathy Risk Assessment</string>
+    <string name="risk_level_low">Risk Level: Low</string>
+    <string name="risk_score">Risk Score: 0.25</string>
+    <string name="ml_model_analysis">✓ Analysis by ML Model</string>
+    <string name="low_risk_description">Based on your test results, your risk of diabetic neuropathy is low.</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="test_data_summary">Test Data Summary</string>
+    <string name="glucose_value">Glucose Value: %1$s mg/dL</string>
+    <string name="temperature_sensation">Temperature Sensation: %1$s</string>
+    <string name="pressure_sensation">Pressure Sensation: %1$s</string>
+    <string name="emg_analysis">EMG Analysis: %1$s</string>
+    <string name="close">Close</string>
+    
+    <!-- Registration Activity strings -->
+    <string name="create_account">Create Account</string>
+    <string name="registration_instruction">Please fill in the information below</string>
+    <string name="terms_agreement">I agree to the Terms and Conditions and Privacy Policy</string>
+    
+    <!-- Recommendation Item strings -->
+    <string name="recommendation_title">Recommendation Title</string>
+    <string name="recommendation_description">Recommendation description with detailed information about what the patient should do.</string>
+    
+    <!-- About Dialog strings -->
+    <string name="about_us_title">About Us</string>
+    <string name="about_us_content">Nerve Protect is an innovative connected health solution developed by a multidisciplinary team of engineers in mechanical, control, and computer engineering, specialized in the design of intelligent medical devices aimed at preventing diabetes-related complications, particularly diabetic neuropathy.\n\nThis project is part of an integrated technological and medical approach, combining innovation, scientific rigor, and a strong commitment to improving public health.\n\nProject Team\nThe development of the application and the smart wearable device was carried out by a dedicated and complementary team:\n\nMs. Roqia BENABOUD\nMs. Sirine Zouaoui\nMr. Ibrahim Rassim Chebout\nMr. Lokmane Abderrahmane Lameri\n\nObjective\nTo provide a reliable and intelligent tool for the early detection of diabetic neuropathy, enabling personalized patient monitoring through real-time analysis of biomedical data, with the goal of reducing the risk of chronic complications.\n\nTechnological Components\nThe system is based on an integrated hardware and software architecture, combining biomedical sensors, embedded signal processing, artificial intelligence, wireless connectivity, and a user-friendly mobile interface.\n\nPartnerships and Supervision\nThis project was developed with the support of:\n\nThe University of Oum El Bouaghi Incubator\nThe National Agency for the Promotion and Development of Technology Parks (ANPT)\n\nUnder the scientific supervision of:\n\nMr. Zakaria Tolba\nMs. Nour El Houda Dehimi\n\n📍 University of Oum El Bouaghi\n📧 benaboud.roqia@univ-oeb.dz\n📧 zouaoui.sirine@univ-oeb.dz</string>
+    <string name="button_close">Close</string>
+    <string name="logout_confirmation_title">Log Out</string>
+    <string name="logout_confirmation_message">Are you sure you want to log out?</string>
+    <string name="logout_success">Successfully logged out</string>
+    <string name="q5_speech_difficulty">q5_speech_difficulty\"</string>
+    
+    <!-- Premium Features -->
+    <string name="premium_features">Fonctionnalités Premium</string>
+    <string name="premium_status">Statut Premium</string>
+    <string name="premium_user">Utilisateur Premium</string>
+    <string name="free_user">Utilisateur Gratuit</string>
+    <string name="upgrade_to_premium">Passer à la version Premium</string>
+    <string name="premium_features_list">• Historique illimité\n• Analyse IA approfondie\n• Export PDF avancé\n• Export Excel\n• Sans filigrane\n• Support prioritaire</string>
+    <string name="premium_price">Seulement 9,99€/mois</string>
+    <string name="premium_benefits">Débloquez toutes les fonctionnalités premium</string>
+</resources>

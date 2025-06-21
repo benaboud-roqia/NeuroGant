@@ -1,0 +1,23 @@
+{
+  "name": "als_info",
+  "displayName": "SLA (Sclérose Latérale Amyotrophique)",
+  "priority": 500000,
+  "trainingPhrases": [
+    {"parts": [{"text": "Avez-vous remarqué une faiblesse progressive dans les bras, les mains ou les jambes ?"}]},
+    {"parts": [{"text": "Avez-vous des difficultés à tenir des objets, écrire, boutonner vos vêtements ?"}]},
+    {"parts": [{"text": "Avez-vous des difficultés à monter les escaliers ou à marcher sans trébucher ?"}]},
+    {"parts": [{"text": "Avez-vous observé une fonte musculaire (amaigrissement visible) dans certaines zones ?"}]},
+    {"parts": [{"text": "Vos muscles tremblent-ils ou se contractent-ils de manière involontaire (fasciculations) ?"}]},
+    {"parts": [{"text": "Avez-vous des difficultés à articuler clairement ?"}]},
+    {"parts": [{"text": "Votre voix est-elle devenue plus faible, nasale ou rauque ?"}]},
+    {"parts": [{"text": "Avez-vous des difficultés à avaler des liquides ou des aliments solides ?"}]},
+    {"parts": [{"text": "Faites-vous des fausses routes (boisson qui passe « de travers ») ?"}]},
+    {"parts": [{"text": "Avez-vous une perte de poids inexpliquée ces derniers mois ?"}]},
+    {"parts": [{"text": "Vos symptômes progressent-ils rapidement ?"}]},
+    {"parts": [{"text": "Avez-vous noté une rigidité musculaire ou des spasmes douloureux ?"}]},
+    {"parts": [{"text": "Avez-vous déjà eu un avis médical ou un électromyogramme (EMG) ?"}]}
+  ],
+  "messages": [
+    {"text": {"text": ["Merci d'avoir répondu au questionnaire SLA. Un rapport sera généré avec des recommandations adaptées à vos réponses."]}}
+  ]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login Activity strings -->
+    <string name="app_description">Su asistente personal para neuropatía diabética</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="forgot_password">¿Olvidó su contraseña?</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="no_account">¿No tiene una cuenta?</string>
+    <string name="register">Registrarse</string>
+    
+    <!-- Register Activity strings -->
+    <string name="back">Atrás</string>
+    <string name="full_name_hint">Nombre completo</string>
+    <string name="confirm_password_hint">Confirmar contraseña</string>
+    <string name="already_account">¿Ya tiene una cuenta?</string>
+    
+    <!-- Profile Activity strings -->
+    <string name="profile_image_desc">Imagen de perfil</string>
+    <string name="select_image">Seleccionar imagen</string>
+    <string name="name_hint">Nombre</string>
+    <string name="family_name_hint">Apellido</string>
+    <string name="address_hint">Dirección</string>
+    <string name="gender">Género</string>
+    <string name="male">Masculino</string>
+    <string name="female">Femenino</string>
+    <string name="age_hint">Edad</string>
+    <string name="diabetes_duration_hint">Duración de la diabetes</string>
+    <string name="diabetes_type_hint">Tipo de diabetes</string>
+    <string name="weight_hint">Peso</string>
+    <string name="save_profile">Guardar perfil</string>
+</resources>

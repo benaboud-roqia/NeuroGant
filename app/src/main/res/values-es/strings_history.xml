@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- History Fragment strings -->
+    <string name="test_history_title">Historial de Pruebas</string>
+    <string name="test_history_subtitle">Ver resultados de pruebas de neuropatía anteriores</string>
+    <string name="no_test_history">No hay historial de pruebas disponible</string>
+    <string name="temperature_sensation_label">Sensación de Temperatura:</string>
+    <string name="pressure_sensation_label">Sensación de Presión:</string>
+    <string name="yes_response">Sí</string>
+    <string name="no_response">No</string>
+    <string name="loading_history">Cargando historial de pruebas...</string>
+</resources>
